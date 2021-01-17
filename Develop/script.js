@@ -1,13 +1,10 @@
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 var numbers = "123456789".split("");
 var specialChar = "!@#$%^&*".split("");
 var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-var passwordChoice = []
-
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -24,6 +21,7 @@ function generatePassword(){
   var passwordLength = prompt("Please select a password length of at least 8 characters, and no more than 128 characters.")
 
   var password ="";
+  var passwordChoice = []
   
 if (isNaN(passwordLength)){
   alert("Password must contain numbers")
@@ -43,12 +41,20 @@ if (passwordLength > 128) {
   
    if (specialCharChoice === true){
      passwordChoice = [...passwordChoice, ...specialChar];
-   }
+     }
+     else {
+       passwordChoice = 
+       [...passwordChoice]
+     }
 
   var lowerCaseChoice = confirm("Would you like to include lowercase letters?");
   
     if (lowerCaseChoice === true){
       passwordChoice = [...passwordChoice, ...lowerCase];
+    }
+    else {
+      passwordChoice = 
+      [...passwordChoice]
     }
   
 var upperCaseChoice = confirm("Would you like to include uppercase letters?");
@@ -56,12 +62,22 @@ var upperCaseChoice = confirm("Would you like to include uppercase letters?");
   if (upperCaseChoice === true){
     passwordChoice = [...passwordChoice, ...upperCase];
   }
+  else {
+    passwordChoice = 
+      [...passwordChoice
+    ]
+  }
   
 
   var numbersChoice = confirm("Would you like to include numbers?");
 
   if (numbersChoice === true){
     passwordChoice = [...passwordChoice, ...numbers];
+  }
+  else {
+    passwordChoice = 
+      [...passwordChoice
+    ]
   }
 
   for(var i = 0;i < passwordLength;i++){
