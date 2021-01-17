@@ -1,6 +1,6 @@
 # Password-Generator
 
-
+I took a partially done Javascript page and made it functional so a password is generated properly with the user choices.
 
 ## Functionality Description
 
