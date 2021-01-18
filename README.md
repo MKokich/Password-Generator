@@ -13,8 +13,7 @@ https://mkokich.github.io/Password-Generator/
 
 ## Screenshots of Pages
 
-![alt text](Password-Generator.png)
-
+![Password-Generator](https://user-images.githubusercontent.com/75143471/104865395-d9e25a80-5909-11eb-89bc-02a3f529ad2c.png)
 
 
 
