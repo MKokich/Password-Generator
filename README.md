@@ -4,20 +4,16 @@ I took a partially done Javascript page and made it functional so a password is 
 
 ## Functionality Description
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+1. Used Javascript to create variables, functions, and a for loop and random selection to generate the proper password selected by user's choice.
+
 
 ## Link to Live Site
 
-
+https://mkokich.github.io/Password-Generator/
 
 ## Screenshots of Pages
 
+![alt text](Password-Generator.png)
 
 
 
